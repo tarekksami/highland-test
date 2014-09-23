@@ -2,8 +2,8 @@
 
 include 'include/db_connect.php';
 include 'ListService.php';
-require_once('../../tcpdf/config/lang/eng.php');
-require_once('../../tcpdf.php');
+require_once('../tcpdf/config/lang/eng.php');
+require_once('../tcpdf.php');
 
 $listService = new ListService($connection, $_SESSION['user_id']);
 
