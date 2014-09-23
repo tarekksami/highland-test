@@ -30,15 +30,13 @@ $pdf->SetFont('times', 'BI', 20);
 
 $pdf->AddPage();
 
-$txt = '';
+$txt = '<ul>';
 
 while($item = $list->fetch_assoc()){
-		txt .= '<li>';
-		txt .= '<h2>' . $item['name'] . '</h2>';
-		txt .= $item['content'];
-		txt .= '</li>';
-		txt .= "<br/>";
+		txt .= '<li>' .'<h2>' . $item['name'] . '</h2>' . $item['content'] . '</li>' . "<br/>";
 	};
+
+$txt .= '</ul>';
 
 
 $pdf->Write(0, $txt, '', 0, 'C', true, 0, false, false, 0);
