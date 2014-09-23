@@ -1,0 +1,71 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+div#wrapper {
+	min-height:100%;
+	position:relative;
+}
+div#header {
+	padding:20px;
+	background:#00FFFF;
+}
+#header h1{
+	text-align:left;
+	float:left;
+	margin-top:-5px;
+}
+a{
+	text-decoration: none;
+	display: inline;
+}
+h2{
+	display: inline;
+}
+a.del{
+	float:right;
+}
+#actions a {
+	float:right;
+	text-align:right;
+}
+#actions a:hover {
+	text-decoration: underline;
+}
+div#content {
+	margin-left: 15px;
+	margin-right: 50px;
+	padding: 10px;
+	padding-left:20px;
+	padding-bottom:80px; 
+	background:#0997A;
+	text-align: left;
+}
+div#footer {
+	width:100%;
+	height:30px;
+	position:absolute;
+	padding-top: 10px;
+	padding-left:10px;
+	bottom:0;
+	left:0;
+	background:#ee5;
+}
+#wrapper ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	border-bottom: 1px solid;
+	text-align: left;
+}
+ 
+li:last-child {
+	border: none;
+}
