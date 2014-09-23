@@ -33,7 +33,7 @@ $pdf->AddPage();
 $txt = '<ul>';
 
 while($item = $list->fetch_assoc()){
-		txt .= '<li>' .'<h2>' . $item['name'] . '</h2>' . $item['content'] . '</li>' . "<br/>";
+		$txt .= '<li>' .'<h2>' . $item['name'] . '</h2>' . $item['content'] . '</li>' . "<br/>";
 	};
 
 $txt .= '</ul>';
